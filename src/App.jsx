@@ -1,12 +1,15 @@
-import React from 'react'
-import './App.css'
+import React from "react";
+import "./App.css";
+import Header from "./components/Header/Header";
+import Blogs from "./components/Blogs/Blogs";
 
 const App = () => {
-  return (
-    <div >
-      <h1 className='text-2xl'>The Thoughtful Lens</h1>
-    </div>
-  )
-}
+    return (
+        <>
+            <Header></Header>
+            <Blogs></Blogs>
+        </>
+    );
+};
 
-export default App
+export default App;
