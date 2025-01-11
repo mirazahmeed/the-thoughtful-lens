@@ -2,12 +2,17 @@ import React from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Blogs from "./components/Blogs/Blogs";
+import Bookmarks from "./components/Bookmarks/Bookmarks";
 
 const App = () => {
     return (
         <>
             <Header></Header>
-            <Blogs></Blogs>
+
+            <div className="flex">
+                <Blogs></Blogs>
+                <Bookmarks></Bookmarks>
+            </div>
         </>
     );
 };
