@@ -3,7 +3,7 @@ import Blog from "../Blog/Blog";
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
-    console.log(blogs);
+    // console.log(blogs);
 
     useEffect(() => {
         fetch("blogs.json")
