@@ -5,8 +5,10 @@ import PropTypes from "prop-types";
 const Bookmark = ({ bookmark }) => {
     const { title } = bookmark;
     return (
-        <div>
-            <h4>{title}</h4>
+        <div className="">
+            <div className="shadow-2xl p-7 rounded-lg">
+                <h4 className="text-xl">{title}</h4>
+            </div>
         </div>
     );
 };

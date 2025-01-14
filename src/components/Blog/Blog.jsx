@@ -2,8 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { FaBookBookmark } from "react-icons/fa6";
 
-const Blog = ({ blog, addToBookmarks }) => {
+const Blog = ({ blog, addToBookmarks,calculateReadingTime }) => {
     const {
+        id,
         title,
         cover,
         posted_date,
@@ -49,6 +50,7 @@ const Blog = ({ blog, addToBookmarks }) => {
                     </span>
                 ))}
             </p>
+            <button onClick={()=>calculateReadingTime(reading_time, id)}>Mark as Read</button>
         </div>
     );
 };
@@ -56,6 +58,7 @@ const Blog = ({ blog, addToBookmarks }) => {
 Blog.propTypes = {
     blog: PropTypes.object.isRequired,
     addToBookmarks: PropTypes.func.isRequired,
+    calculateReadingTime: PropTypes.func.isRequired,
 };
 
 export default Blog;
